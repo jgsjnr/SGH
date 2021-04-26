@@ -7,7 +7,7 @@
                 MsgBox("Usuário já existe", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
             Else
                 Try
-                    sql = "insert into users value ('" & txtUser.Text & "','" & txtPasswd.Text & "','" & cmbLevel.Text & "'"
+                    sql = "insert into users values('" & txtUser.Text & "','" & txtPasswd.Text & "','" & cmbLevel.Text & "'"
                     rs = db.Execute(sql)
                     MsgBox("Usuário adicionado com sucesso", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
                     cleanRegister()
@@ -61,7 +61,7 @@
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
-        Close()
+        Hide()
         menuLoad.Show()
     End Sub
 End Class

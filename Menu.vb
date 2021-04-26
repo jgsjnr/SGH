@@ -27,4 +27,9 @@
         loginLoad.Show()
         session = False
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Hide()
+        recordLoad.Show()
+    End Sub
 End Class

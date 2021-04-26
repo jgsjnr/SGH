@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Record
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Record
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -46,7 +46,7 @@ Partial Class Record
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.txtMail = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
@@ -56,7 +56,7 @@ Partial Class Record
         Me.Label27 = New System.Windows.Forms.Label()
         Me.btnNew = New System.Windows.Forms.Button()
         Me.btnSubmit = New System.Windows.Forms.Button()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        Me.txtAlergy = New System.Windows.Forms.RichTextBox()
         Me.txtCpf = New System.Windows.Forms.MaskedTextBox()
         Me.txtCep = New System.Windows.Forms.MaskedTextBox()
         Me.txtCel = New System.Windows.Forms.MaskedTextBox()
@@ -64,7 +64,7 @@ Partial Class Record
         Me.txtBirthday = New System.Windows.Forms.MaskedTextBox()
         Me.cmbResp = New System.Windows.Forms.ComboBox()
         Me.cmbBlood = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.cmbCivil = New System.Windows.Forms.ComboBox()
         Me.cmbColor = New System.Windows.Forms.ComboBox()
         Me.txtCpfResp = New System.Windows.Forms.MaskedTextBox()
         Me.cmbAlergy = New System.Windows.Forms.ComboBox()
@@ -295,12 +295,12 @@ Partial Class Record
         Me.Label20.TabIndex = 36
         Me.Label20.Text = "CONTATO "
         '
-        'TextBox20
+        'txtMail
         '
-        Me.TextBox20.Location = New System.Drawing.Point(47, 560)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(450, 23)
-        Me.TextBox20.TabIndex = 44
+        Me.txtMail.Location = New System.Drawing.Point(47, 560)
+        Me.txtMail.Name = "txtMail"
+        Me.txtMail.Size = New System.Drawing.Size(450, 23)
+        Me.txtMail.TabIndex = 44
         '
         'Label21
         '
@@ -395,13 +395,13 @@ Partial Class Record
         Me.btnSubmit.Text = "SALVAR"
         Me.btnSubmit.UseVisualStyleBackColor = False
         '
-        'RichTextBox2
+        'txtAlergy
         '
-        Me.RichTextBox2.Location = New System.Drawing.Point(461, 193)
-        Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(239, 41)
-        Me.RichTextBox2.TabIndex = 57
-        Me.RichTextBox2.Text = ""
+        Me.txtAlergy.Location = New System.Drawing.Point(461, 193)
+        Me.txtAlergy.Name = "txtAlergy"
+        Me.txtAlergy.Size = New System.Drawing.Size(239, 41)
+        Me.txtAlergy.TabIndex = 57
+        Me.txtAlergy.Text = ""
         '
         'txtCpf
         '
@@ -419,22 +419,25 @@ Partial Class Record
         Me.txtCep.Name = "txtCep"
         Me.txtCep.Size = New System.Drawing.Size(100, 23)
         Me.txtCep.TabIndex = 59
+        Me.txtCep.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         '
         'txtCel
         '
         Me.txtCel.Location = New System.Drawing.Point(411, 512)
-        Me.txtCel.Mask = "(00)00000-0000"
+        Me.txtCel.Mask = "00-00000-0000"
         Me.txtCel.Name = "txtCel"
         Me.txtCel.Size = New System.Drawing.Size(100, 23)
         Me.txtCel.TabIndex = 60
+        Me.txtCel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         '
         'txtTel
         '
         Me.txtTel.Location = New System.Drawing.Point(47, 512)
-        Me.txtTel.Mask = "(00)0000-0000"
+        Me.txtTel.Mask = "00-0000-0000"
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(100, 23)
         Me.txtTel.TabIndex = 62
+        Me.txtTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         '
         'txtBirthday
         '
@@ -463,13 +466,14 @@ Partial Class Record
         Me.cmbBlood.Size = New System.Drawing.Size(121, 23)
         Me.cmbBlood.TabIndex = 65
         '
-        'ComboBox3
+        'cmbCivil
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(445, 135)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox3.TabIndex = 66
+        Me.cmbCivil.FormattingEnabled = True
+        Me.cmbCivil.Items.AddRange(New Object() {"Solteiro(a)", "Casado(a)", "Divorciado(a)", "Viuvo(a)", "Estável"})
+        Me.cmbCivil.Location = New System.Drawing.Point(445, 135)
+        Me.cmbCivil.Name = "cmbCivil"
+        Me.cmbCivil.Size = New System.Drawing.Size(121, 23)
+        Me.cmbCivil.TabIndex = 66
         '
         'cmbColor
         '
@@ -487,6 +491,7 @@ Partial Class Record
         Me.txtCpfResp.Name = "txtCpfResp"
         Me.txtCpfResp.Size = New System.Drawing.Size(100, 23)
         Me.txtCpfResp.TabIndex = 68
+        Me.txtCpfResp.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         '
         'cmbAlergy
         '
@@ -506,7 +511,7 @@ Partial Class Record
         Me.Controls.Add(Me.cmbAlergy)
         Me.Controls.Add(Me.txtCpfResp)
         Me.Controls.Add(Me.cmbColor)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.cmbCivil)
         Me.Controls.Add(Me.cmbBlood)
         Me.Controls.Add(Me.cmbResp)
         Me.Controls.Add(Me.txtBirthday)
@@ -514,14 +519,14 @@ Partial Class Record
         Me.Controls.Add(Me.txtCel)
         Me.Controls.Add(Me.txtCep)
         Me.Controls.Add(Me.txtCpf)
-        Me.Controls.Add(Me.RichTextBox2)
+        Me.Controls.Add(Me.txtAlergy)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.btnNew)
         Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.txtObs)
         Me.Controls.Add(Me.Label26)
         Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.TextBox20)
+        Me.Controls.Add(Me.txtMail)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Label25)
@@ -581,7 +586,7 @@ Partial Class Record
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox20 As TextBox
+    Friend WithEvents txtMail As TextBox
     Friend WithEvents Label21 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
@@ -591,7 +596,6 @@ Partial Class Record
     Friend WithEvents Label27 As Label
     Friend WithEvents btnNew As Button
     Friend WithEvents btnSubmit As Button
-    Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents txtCpf As MaskedTextBox
     Friend WithEvents txtCep As MaskedTextBox
     Friend WithEvents txtCel As MaskedTextBox
@@ -599,8 +603,9 @@ Partial Class Record
     Friend WithEvents txtBirthday As MaskedTextBox
     Friend WithEvents cmbResp As ComboBox
     Friend WithEvents cmbBlood As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents cmbCivil As ComboBox
     Friend WithEvents cmbColor As ComboBox
     Friend WithEvents txtCpfResp As MaskedTextBox
     Friend WithEvents cmbAlergy As ComboBox
+    Friend WithEvents txtAlergy As RichTextBox
 End Class

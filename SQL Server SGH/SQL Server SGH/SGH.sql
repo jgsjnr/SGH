@@ -8,8 +8,10 @@ insert into users values('user', 'user', 'user');
 
 select * from users;
 
-create table info (nome varchar(60), cpf varchar(14) primary key, nascimento varchar(8),
-civil varchar(10), cor varchar(15), sangue varchar(5), alergia varchar(4), obs_alergia varchar(50),
-responsavel varchar(4), nome_responsavel varchar(50), cpf_responsavel varchar(14), endereco varchar(60),
-complemento varchar(10), cidade varchar(30), uf varchar(4), cep varchar(9), telefone varchar(10), celular varchar(11),
+create table info (name varchar(60), cpf varchar(14) primary key, birthday varchar(8),
+civil varchar(10), color varchar(15), blood varchar(5), alergy varchar(4), obs_alergy varchar(50),
+resp varchar(4), name_resp varchar(50), cpf_resp varchar(14), address varchar(60),
+comp varchar(10), city varchar(30), uf varchar(4), cep varchar(9), tel varchar(10), cel varchar(11),
 email varchar(30), obs varchar(240));
+
+select * from info;

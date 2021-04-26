@@ -7,6 +7,7 @@
     Public loginLoad As New Login
     Public menuLoad As New Menu
     Public registerLoad As New Register
+    Public recordLoad As New Record
     Public session As Boolean
     Public sessionUser As String
     Public sessionLevel As String
