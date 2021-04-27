@@ -8,6 +8,7 @@
     Public menuLoad As New Menu
     Public registerLoad As New Register
     Public recordLoad As New Record
+    Public mainLoad As New Main
     Public session As Boolean
     Public sessionUser As String
     Public sessionLevel As String
@@ -28,4 +29,34 @@
             loginLoad.Hide()
         End If
     End Sub
+    Function numGen()
+        Dim num As Integer
+        Dim result As Integer
+        sql = "select * from info"
+        rs = db.Execute(sql)
+        If rs.EOF And rs.BOF Then
+            If rs.RecordCount <= 0 Then
+                result = 0
+            Else
+                num = CInt(rs.Fields(0).Value)
+                If num = 0 Then
+                    result = 1
+                Else
+                    result = num + 1
+                End If
+            End If
+        Else
+            sql = "SELECT MAX(id) from info"
+            rs = db.Execute(sql)
+            If rs.EOF = False Then
+                num = CInt(rs.Fields(0).Value)
+                If num = 0 Then
+                    result = 1
+                Else
+                    result = num + 1
+                End If
+            End If
+        End If
+        Return result
+    End Function
 End Module

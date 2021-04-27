@@ -2,13 +2,16 @@
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Try
+            Dim id As Integer
+            id = numGen()
             sql = "select * from info where cpf='" & txtCpf.Text & "'"
             rs = db.Execute(sql)
             If rs.EOF = False Then
                 MsgBox("Usuário já existe", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
             Else
                 Try
-                    sql = "insert into info values('" & txtName.Text & "'" _
+                    sql = "insert into info values('" & id & "'" _
+                                                    & ",'" & txtName.Text & "'" _
                                                     & ",'" & txtCpf.Text & "'" _
                                                     & ",'" & txtBirthday.Text & "'" _
                                                     & ",'" & cmbCivil.Text & "'" _

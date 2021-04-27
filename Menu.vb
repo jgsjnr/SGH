@@ -32,4 +32,9 @@
         Hide()
         recordLoad.Show()
     End Sub
+
+    Private Sub btnMain_Click(sender As Object, e As EventArgs) Handles btnMain.Click
+        Hide()
+        mainLoad.Show()
+    End Sub
 End Class

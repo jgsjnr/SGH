@@ -27,6 +27,7 @@ Partial Class Menu
         Me.lblAuthText = New System.Windows.Forms.Label()
         Me.lblAuth = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnMain = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnQuit
@@ -73,11 +74,21 @@ Partial Class Menu
         Me.Button1.Text = "Cadastrar Paciente"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnMain
+        '
+        Me.btnMain.Location = New System.Drawing.Point(12, 267)
+        Me.btnMain.Name = "btnMain"
+        Me.btnMain.Size = New System.Drawing.Size(333, 23)
+        Me.btnMain.TabIndex = 11
+        Me.btnMain.Text = "Acessar dados"
+        Me.btnMain.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(357, 450)
+        Me.Controls.Add(Me.btnMain)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblAuth)
         Me.Controls.Add(Me.lblAuthText)
@@ -96,4 +107,5 @@ Partial Class Menu
     Friend WithEvents lblAuthText As Label
     Friend WithEvents lblAuth As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnMain As Button
 End Class
