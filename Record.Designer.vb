@@ -68,6 +68,14 @@ Partial Class Record
         Me.cmbColor = New System.Windows.Forms.ComboBox()
         Me.txtCpfResp = New System.Windows.Forms.MaskedTextBox()
         Me.cmbAlergy = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnSair = New System.Windows.Forms.Button()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -75,7 +83,7 @@ Partial Class Record
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Orange
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(47, 25)
+        Me.Label1.Location = New System.Drawing.Point(41, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(165, 25)
         Me.Label1.TabIndex = 0
@@ -85,7 +93,7 @@ Partial Class Record
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(47, 65)
+        Me.Label2.Location = New System.Drawing.Point(41, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(99, 19)
         Me.Label2.TabIndex = 1
@@ -95,7 +103,7 @@ Partial Class Record
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(210, 161)
+        Me.Label3.Location = New System.Drawing.Point(170, 161)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(89, 19)
         Me.Label3.TabIndex = 2
@@ -105,7 +113,7 @@ Partial Class Record
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(47, 161)
+        Me.Label4.Location = New System.Drawing.Point(41, 161)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(33, 19)
         Me.Label4.TabIndex = 3
@@ -115,7 +123,7 @@ Partial Class Record
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(506, 242)
+        Me.Label6.Location = New System.Drawing.Point(341, 282)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(31, 19)
         Me.Label6.TabIndex = 5
@@ -125,7 +133,7 @@ Partial Class Record
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(47, 227)
+        Me.Label7.Location = New System.Drawing.Point(41, 227)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(84, 19)
         Me.Label7.TabIndex = 6
@@ -135,7 +143,7 @@ Partial Class Record
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.Location = New System.Drawing.Point(461, 166)
+        Me.Label9.Location = New System.Drawing.Point(405, 113)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(55, 19)
         Me.Label9.TabIndex = 8
@@ -145,7 +153,7 @@ Partial Class Record
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.Location = New System.Drawing.Point(445, 113)
+        Me.Label10.Location = New System.Drawing.Point(273, 113)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(80, 19)
         Me.Label10.TabIndex = 9
@@ -155,7 +163,7 @@ Partial Class Record
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(166, 227)
+        Me.Label11.Location = New System.Drawing.Point(160, 227)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(133, 19)
         Me.Label11.TabIndex = 10
@@ -165,7 +173,7 @@ Partial Class Record
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.Location = New System.Drawing.Point(204, 113)
+        Me.Label12.Location = New System.Drawing.Point(143, 113)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(124, 19)
         Me.Label12.TabIndex = 11
@@ -175,7 +183,7 @@ Partial Class Record
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(47, 113)
+        Me.Label13.Location = New System.Drawing.Point(41, 113)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(31, 19)
         Me.Label13.TabIndex = 12
@@ -183,14 +191,14 @@ Partial Class Record
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(47, 87)
+        Me.txtName.Location = New System.Drawing.Point(41, 87)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(425, 23)
+        Me.txtName.Size = New System.Drawing.Size(437, 23)
         Me.txtName.TabIndex = 13
         '
         'txtNameResp
         '
-        Me.txtNameResp.Location = New System.Drawing.Point(166, 249)
+        Me.txtNameResp.Location = New System.Drawing.Point(160, 249)
         Me.txtNameResp.Name = "txtNameResp"
         Me.txtNameResp.Size = New System.Drawing.Size(318, 23)
         Me.txtNameResp.TabIndex = 23
@@ -200,7 +208,7 @@ Partial Class Record
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Orange
         Me.Label14.Font = New System.Drawing.Font("Bahnschrift Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label14.Location = New System.Drawing.Point(47, 288)
+        Me.Label14.Location = New System.Drawing.Point(41, 288)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(81, 25)
         Me.Label14.TabIndex = 25
@@ -208,37 +216,37 @@ Partial Class Record
         '
         'txtUf
         '
-        Me.txtUf.Location = New System.Drawing.Point(273, 400)
+        Me.txtUf.Location = New System.Drawing.Point(267, 400)
         Me.txtUf.Name = "txtUf"
         Me.txtUf.Size = New System.Drawing.Size(55, 23)
         Me.txtUf.TabIndex = 34
         '
         'txtCity
         '
-        Me.txtCity.Location = New System.Drawing.Point(47, 400)
+        Me.txtCity.Location = New System.Drawing.Point(41, 400)
         Me.txtCity.Name = "txtCity"
         Me.txtCity.Size = New System.Drawing.Size(200, 23)
         Me.txtCity.TabIndex = 33
         '
         'txtComp
         '
-        Me.txtComp.Location = New System.Drawing.Point(489, 352)
+        Me.txtComp.Location = New System.Drawing.Point(329, 352)
         Me.txtComp.Name = "txtComp"
         Me.txtComp.Size = New System.Drawing.Size(149, 23)
         Me.txtComp.TabIndex = 32
         '
         'txtAddress
         '
-        Me.txtAddress.Location = New System.Drawing.Point(47, 352)
+        Me.txtAddress.Location = New System.Drawing.Point(41, 352)
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(425, 23)
+        Me.txtAddress.Size = New System.Drawing.Size(281, 23)
         Me.txtAddress.TabIndex = 31
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label15.Location = New System.Drawing.Point(47, 378)
+        Me.Label15.Location = New System.Drawing.Point(41, 378)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(49, 19)
         Me.Label15.TabIndex = 30
@@ -248,7 +256,7 @@ Partial Class Record
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label16.Location = New System.Drawing.Point(271, 378)
+        Me.Label16.Location = New System.Drawing.Point(265, 378)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(24, 19)
         Me.Label16.TabIndex = 29
@@ -258,7 +266,7 @@ Partial Class Record
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label17.Location = New System.Drawing.Point(351, 378)
+        Me.Label17.Location = New System.Drawing.Point(378, 378)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(31, 19)
         Me.Label17.TabIndex = 28
@@ -268,7 +276,7 @@ Partial Class Record
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label18.Location = New System.Drawing.Point(489, 330)
+        Me.Label18.Location = New System.Drawing.Point(329, 330)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(90, 19)
         Me.Label18.TabIndex = 27
@@ -278,7 +286,7 @@ Partial Class Record
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label19.Location = New System.Drawing.Point(47, 330)
+        Me.Label19.Location = New System.Drawing.Point(41, 330)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(65, 19)
         Me.Label19.TabIndex = 26
@@ -289,7 +297,7 @@ Partial Class Record
         Me.Label20.AutoSize = True
         Me.Label20.BackColor = System.Drawing.Color.Orange
         Me.Label20.Font = New System.Drawing.Font("Bahnschrift Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label20.Location = New System.Drawing.Point(47, 444)
+        Me.Label20.Location = New System.Drawing.Point(41, 444)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(75, 25)
         Me.Label20.TabIndex = 36
@@ -297,16 +305,16 @@ Partial Class Record
         '
         'txtMail
         '
-        Me.txtMail.Location = New System.Drawing.Point(47, 560)
+        Me.txtMail.Location = New System.Drawing.Point(41, 560)
         Me.txtMail.Name = "txtMail"
-        Me.txtMail.Size = New System.Drawing.Size(450, 23)
+        Me.txtMail.Size = New System.Drawing.Size(437, 23)
         Me.txtMail.TabIndex = 44
         '
         'Label21
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label21.Location = New System.Drawing.Point(47, 538)
+        Me.Label21.Location = New System.Drawing.Point(41, 538)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(43, 19)
         Me.Label21.TabIndex = 41
@@ -336,7 +344,7 @@ Partial Class Record
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label22.Location = New System.Drawing.Point(47, 490)
+        Me.Label22.Location = New System.Drawing.Point(41, 490)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(62, 19)
         Me.Label22.TabIndex = 45
@@ -346,7 +354,7 @@ Partial Class Record
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label26.Location = New System.Drawing.Point(411, 490)
+        Me.Label26.Location = New System.Drawing.Point(378, 490)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(58, 19)
         Me.Label26.TabIndex = 48
@@ -354,9 +362,9 @@ Partial Class Record
         '
         'txtObs
         '
-        Me.txtObs.Location = New System.Drawing.Point(47, 630)
+        Me.txtObs.Location = New System.Drawing.Point(41, 630)
         Me.txtObs.Name = "txtObs"
-        Me.txtObs.Size = New System.Drawing.Size(579, 89)
+        Me.txtObs.Size = New System.Drawing.Size(437, 66)
         Me.txtObs.TabIndex = 49
         Me.txtObs.Text = ""
         '
@@ -365,7 +373,7 @@ Partial Class Record
         Me.Label27.AutoSize = True
         Me.Label27.BackColor = System.Drawing.Color.Orange
         Me.Label27.Font = New System.Drawing.Font("Bahnschrift Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label27.Location = New System.Drawing.Point(47, 602)
+        Me.Label27.Location = New System.Drawing.Point(41, 593)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(110, 25)
         Me.Label27.TabIndex = 50
@@ -373,39 +381,49 @@ Partial Class Record
         '
         'btnNew
         '
-        Me.btnNew.BackColor = System.Drawing.Color.Orange
+        Me.btnNew.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnNew.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnNew.FlatAppearance.BorderSize = 0
+        Me.btnNew.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange
+        Me.btnNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNew.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnNew.ForeColor = System.Drawing.Color.White
-        Me.btnNew.Location = New System.Drawing.Point(640, 680)
+        Me.btnNew.Location = New System.Drawing.Point(0, 626)
         Me.btnNew.Name = "btnNew"
-        Me.btnNew.Size = New System.Drawing.Size(93, 39)
+        Me.btnNew.Size = New System.Drawing.Size(200, 40)
         Me.btnNew.TabIndex = 51
         Me.btnNew.Text = "NOVO"
         Me.btnNew.UseVisualStyleBackColor = False
         '
         'btnSubmit
         '
-        Me.btnSubmit.BackColor = System.Drawing.Color.Orange
+        Me.btnSubmit.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnSubmit.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnSubmit.FlatAppearance.BorderSize = 0
+        Me.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange
+        Me.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubmit.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnSubmit.ForeColor = System.Drawing.Color.White
-        Me.btnSubmit.Location = New System.Drawing.Point(640, 630)
+        Me.btnSubmit.Location = New System.Drawing.Point(0, 586)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(93, 39)
+        Me.btnSubmit.Size = New System.Drawing.Size(200, 40)
         Me.btnSubmit.TabIndex = 52
         Me.btnSubmit.Text = "SALVAR"
         Me.btnSubmit.UseVisualStyleBackColor = False
         '
         'txtAlergy
         '
-        Me.txtAlergy.Location = New System.Drawing.Point(461, 193)
+        Me.txtAlergy.Location = New System.Drawing.Point(299, 183)
         Me.txtAlergy.Name = "txtAlergy"
-        Me.txtAlergy.Size = New System.Drawing.Size(239, 41)
+        Me.txtAlergy.Size = New System.Drawing.Size(179, 50)
         Me.txtAlergy.TabIndex = 57
         Me.txtAlergy.Text = ""
         '
         'txtCpf
         '
-        Me.txtCpf.Location = New System.Drawing.Point(46, 135)
+        Me.txtCpf.Location = New System.Drawing.Point(40, 135)
         Me.txtCpf.Mask = "000.000.000-00"
         Me.txtCpf.Name = "txtCpf"
         Me.txtCpf.Size = New System.Drawing.Size(100, 23)
@@ -414,7 +432,7 @@ Partial Class Record
         '
         'txtCep
         '
-        Me.txtCep.Location = New System.Drawing.Point(351, 400)
+        Me.txtCep.Location = New System.Drawing.Point(378, 400)
         Me.txtCep.Mask = "00000-000"
         Me.txtCep.Name = "txtCep"
         Me.txtCep.Size = New System.Drawing.Size(100, 23)
@@ -423,7 +441,7 @@ Partial Class Record
         '
         'txtCel
         '
-        Me.txtCel.Location = New System.Drawing.Point(411, 512)
+        Me.txtCel.Location = New System.Drawing.Point(378, 512)
         Me.txtCel.Mask = "00-00000-0000"
         Me.txtCel.Name = "txtCel"
         Me.txtCel.Size = New System.Drawing.Size(100, 23)
@@ -432,7 +450,7 @@ Partial Class Record
         '
         'txtTel
         '
-        Me.txtTel.Location = New System.Drawing.Point(47, 512)
+        Me.txtTel.Location = New System.Drawing.Point(41, 512)
         Me.txtTel.Mask = "00-0000-0000"
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(100, 23)
@@ -441,10 +459,10 @@ Partial Class Record
         '
         'txtBirthday
         '
-        Me.txtBirthday.Location = New System.Drawing.Point(207, 135)
+        Me.txtBirthday.Location = New System.Drawing.Point(146, 135)
         Me.txtBirthday.Mask = "00/00/0000"
         Me.txtBirthday.Name = "txtBirthday"
-        Me.txtBirthday.Size = New System.Drawing.Size(100, 23)
+        Me.txtBirthday.Size = New System.Drawing.Size(121, 23)
         Me.txtBirthday.TabIndex = 63
         Me.txtBirthday.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         '
@@ -452,16 +470,16 @@ Partial Class Record
         '
         Me.cmbResp.FormattingEnabled = True
         Me.cmbResp.Items.AddRange(New Object() {"Sim", "Não"})
-        Me.cmbResp.Location = New System.Drawing.Point(36, 249)
+        Me.cmbResp.Location = New System.Drawing.Point(41, 249)
         Me.cmbResp.Name = "cmbResp"
-        Me.cmbResp.Size = New System.Drawing.Size(121, 23)
+        Me.cmbResp.Size = New System.Drawing.Size(110, 23)
         Me.cmbResp.TabIndex = 64
         '
         'cmbBlood
         '
         Me.cmbBlood.FormattingEnabled = True
         Me.cmbBlood.Items.AddRange(New Object() {"A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"})
-        Me.cmbBlood.Location = New System.Drawing.Point(207, 183)
+        Me.cmbBlood.Location = New System.Drawing.Point(167, 183)
         Me.cmbBlood.Name = "cmbBlood"
         Me.cmbBlood.Size = New System.Drawing.Size(121, 23)
         Me.cmbBlood.TabIndex = 65
@@ -470,7 +488,7 @@ Partial Class Record
         '
         Me.cmbCivil.FormattingEnabled = True
         Me.cmbCivil.Items.AddRange(New Object() {"Solteiro(a)", "Casado(a)", "Divorciado(a)", "Viuvo(a)", "Estável"})
-        Me.cmbCivil.Location = New System.Drawing.Point(445, 135)
+        Me.cmbCivil.Location = New System.Drawing.Point(273, 135)
         Me.cmbCivil.Name = "cmbCivil"
         Me.cmbCivil.Size = New System.Drawing.Size(121, 23)
         Me.cmbCivil.TabIndex = 66
@@ -479,14 +497,14 @@ Partial Class Record
         '
         Me.cmbColor.FormattingEnabled = True
         Me.cmbColor.Items.AddRange(New Object() {"Branco", "Preto", "Pardo", "Amarelo", "Indigena", "*"})
-        Me.cmbColor.Location = New System.Drawing.Point(46, 183)
+        Me.cmbColor.Location = New System.Drawing.Point(40, 183)
         Me.cmbColor.Name = "cmbColor"
         Me.cmbColor.Size = New System.Drawing.Size(121, 23)
         Me.cmbColor.TabIndex = 67
         '
         'txtCpfResp
         '
-        Me.txtCpfResp.Location = New System.Drawing.Point(506, 264)
+        Me.txtCpfResp.Location = New System.Drawing.Point(378, 278)
         Me.txtCpfResp.Mask = "000.000.000-00"
         Me.txtCpfResp.Name = "txtCpfResp"
         Me.txtCpfResp.Size = New System.Drawing.Size(100, 23)
@@ -497,17 +515,99 @@ Partial Class Record
         '
         Me.cmbAlergy.FormattingEnabled = True
         Me.cmbAlergy.Items.AddRange(New Object() {"Sim", "Não"})
-        Me.cmbAlergy.Location = New System.Drawing.Point(522, 164)
+        Me.cmbAlergy.Location = New System.Drawing.Point(405, 135)
         Me.cmbAlergy.Name = "cmbAlergy"
-        Me.cmbAlergy.Size = New System.Drawing.Size(121, 23)
+        Me.cmbAlergy.Size = New System.Drawing.Size(73, 23)
         Me.cmbAlergy.TabIndex = 69
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(299, 161)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(79, 19)
+        Me.Label5.TabIndex = 70
+        Me.Label5.Text = "OBS ALERGIA:"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel1.Controls.Add(Me.btnUpdate)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.btnSubmit)
+        Me.Panel1.Controls.Add(Me.btnNew)
+        Me.Panel1.Controls.Add(Me.btnSair)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel1.Location = New System.Drawing.Point(518, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(200, 706)
+        Me.Panel1.TabIndex = 71
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnUpdate.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnUpdate.FlatAppearance.BorderSize = 0
+        Me.btnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange
+        Me.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdate.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(0, 546)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(200, 40)
+        Me.btnUpdate.TabIndex = 54
+        Me.btnUpdate.Text = "ATUALIZAR"
+        Me.btnUpdate.UseVisualStyleBackColor = False
+        Me.btnUpdate.Visible = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Impact", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label8.Location = New System.Drawing.Point(22, 154)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(152, 60)
+        Me.Label8.TabIndex = 12
+        Me.Label8.Text = "AÇÕES"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SGH.My.Resources.Resources.menu_5_line
+        Me.PictureBox1.Location = New System.Drawing.Point(51, 25)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 93)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
+        'btnSair
+        '
+        Me.btnSair.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnSair.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnSair.FlatAppearance.BorderSize = 0
+        Me.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange
+        Me.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSair.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnSair.ForeColor = System.Drawing.Color.White
+        Me.btnSair.Location = New System.Drawing.Point(0, 666)
+        Me.btnSair.Name = "btnSair"
+        Me.btnSair.Size = New System.Drawing.Size(200, 40)
+        Me.btnSair.TabIndex = 53
+        Me.btnSair.Text = "VOLTAR"
+        Me.btnSair.UseVisualStyleBackColor = False
         '
         'Record
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Gainsboro
-        Me.ClientSize = New System.Drawing.Size(756, 726)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(718, 706)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.cmbAlergy)
         Me.Controls.Add(Me.txtCpfResp)
         Me.Controls.Add(Me.cmbColor)
@@ -520,8 +620,6 @@ Partial Class Record
         Me.Controls.Add(Me.txtCep)
         Me.Controls.Add(Me.txtCpf)
         Me.Controls.Add(Me.txtAlergy)
-        Me.Controls.Add(Me.btnSubmit)
-        Me.Controls.Add(Me.btnNew)
         Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.txtObs)
         Me.Controls.Add(Me.Label26)
@@ -554,9 +652,13 @@ Partial Class Record
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Record"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CADASTRO"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -608,4 +710,10 @@ Partial Class Record
     Friend WithEvents txtCpfResp As MaskedTextBox
     Friend WithEvents cmbAlergy As ComboBox
     Friend WithEvents txtAlergy As RichTextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label8 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnSair As Button
+    Friend WithEvents btnUpdate As Button
 End Class

@@ -3,15 +3,12 @@
     Public rs As New ADODB.Recordset
     Public sql As String
     Public compName = Environment.MachineName
-    Public splashLoad As New Splash
-    Public loginLoad As New Login
-    Public menuLoad As New Menu
-    Public registerLoad As New Register
-    Public recordLoad As New Record
-    Public mainLoad As New Main
     Public session As Boolean
     Public sessionUser As String
     Public sessionLevel As String
+    Public updateLevel As Boolean
+    Public rowValue As String
+
 
     Sub conBanco()
         Try
@@ -21,13 +18,6 @@
         Catch ex As Exception
             MsgBox("Conexão mal sucedida", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
         End Try
-    End Sub
-    Sub testSession()
-        If session = False Then
-            loginLoad.Close()
-        Else
-            loginLoad.Hide()
-        End If
     End Sub
     Function numGen()
         Dim num As Integer

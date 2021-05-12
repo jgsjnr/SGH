@@ -8,33 +8,42 @@
     End Sub
 
     Private Sub Menu_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Dispose()
         session = False
     End Sub
 
     Private Sub bntRegister_Click(sender As Object, e As EventArgs) Handles bntRegister.Click
-        Hide()
+        Dim registerLoad As New Register
+        Close()
         registerLoad.Show()
     End Sub
 
     Private Sub Menu_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-        With menuLoad
-            .lblAuth.Text = sessionUser
-        End With
+        lblAuth.Text = sessionUser
     End Sub
 
     Private Sub btnQuit_Click_1(sender As Object, e As EventArgs) Handles btnQuit.Click
-        Hide()
+        Dim loginLoad As New Login
+        Dispose()
         loginLoad.Show()
-        session = False
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Hide()
+        updateLevel = False
+        Dim recordLoad As New Record
+        Close()
         recordLoad.Show()
     End Sub
 
     Private Sub btnMain_Click(sender As Object, e As EventArgs) Handles btnMain.Click
-        Hide()
+        Dim mainLoad As New Main
+        Close()
         mainLoad.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim consultLoad As New Consult
+        Close()
+        consultLoad.Show()
     End Sub
 End Class

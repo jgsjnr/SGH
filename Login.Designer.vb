@@ -28,21 +28,33 @@ Partial Class Login
         Me.txtPasswd = New System.Windows.Forms.TextBox()
         Me.lblSenha = New System.Windows.Forms.Label()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnAccess
         '
-        Me.btnAccess.Location = New System.Drawing.Point(12, 103)
+        Me.btnAccess.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnAccess.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnAccess.FlatAppearance.BorderSize = 0
+        Me.btnAccess.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange
+        Me.btnAccess.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.btnAccess.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAccess.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnAccess.Location = New System.Drawing.Point(0, 239)
         Me.btnAccess.Name = "btnAccess"
-        Me.btnAccess.Size = New System.Drawing.Size(100, 23)
+        Me.btnAccess.Size = New System.Drawing.Size(239, 40)
         Me.btnAccess.TabIndex = 0
         Me.btnAccess.Text = "Acessar"
-        Me.btnAccess.UseVisualStyleBackColor = True
+        Me.btnAccess.UseVisualStyleBackColor = False
         '
         'lblUsuario
         '
         Me.lblUsuario.AutoSize = True
-        Me.lblUsuario.Location = New System.Drawing.Point(12, 7)
+        Me.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblUsuario.Location = New System.Drawing.Point(12, 132)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(47, 15)
         Me.lblUsuario.TabIndex = 1
@@ -50,23 +62,28 @@ Partial Class Login
         '
         'txtUser
         '
-        Me.txtUser.Location = New System.Drawing.Point(12, 25)
+        Me.txtUser.BackColor = System.Drawing.Color.SeaShell
+        Me.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtUser.Location = New System.Drawing.Point(12, 150)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(100, 23)
-        Me.txtUser.TabIndex = 2
+        Me.txtUser.Size = New System.Drawing.Size(207, 16)
+        Me.txtUser.TabIndex = 1
         '
         'txtPasswd
         '
-        Me.txtPasswd.Location = New System.Drawing.Point(12, 74)
+        Me.txtPasswd.BackColor = System.Drawing.Color.SeaShell
+        Me.txtPasswd.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPasswd.Location = New System.Drawing.Point(12, 199)
         Me.txtPasswd.Name = "txtPasswd"
         Me.txtPasswd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPasswd.Size = New System.Drawing.Size(100, 23)
-        Me.txtPasswd.TabIndex = 4
+        Me.txtPasswd.Size = New System.Drawing.Size(207, 16)
+        Me.txtPasswd.TabIndex = 2
         '
         'lblSenha
         '
         Me.lblSenha.AutoSize = True
-        Me.lblSenha.Location = New System.Drawing.Point(12, 56)
+        Me.lblSenha.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblSenha.Location = New System.Drawing.Point(12, 181)
         Me.lblSenha.Name = "lblSenha"
         Me.lblSenha.Size = New System.Drawing.Size(39, 15)
         Me.lblSenha.TabIndex = 3
@@ -74,29 +91,59 @@ Partial Class Login
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(12, 132)
+        Me.btnQuit.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnQuit.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnQuit.FlatAppearance.BorderSize = 0
+        Me.btnQuit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange
+        Me.btnQuit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnQuit.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnQuit.Location = New System.Drawing.Point(0, 279)
         Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(100, 23)
+        Me.btnQuit.Size = New System.Drawing.Size(239, 40)
         Me.btnQuit.TabIndex = 5
         Me.btnQuit.Text = "Sair"
-        Me.btnQuit.UseVisualStyleBackColor = True
+        Me.btnQuit.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.SGH.My.Resources.Resources.login_circle_line
+        Me.PictureBox1.Location = New System.Drawing.Point(82, 19)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(73, 72)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(239, 107)
+        Me.Panel1.TabIndex = 6
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.CadetBlue
-        Me.ClientSize = New System.Drawing.Size(126, 178)
+        Me.BackColor = System.Drawing.Color.SteelBlue
+        Me.ClientSize = New System.Drawing.Size(239, 319)
+        Me.Controls.Add(Me.btnAccess)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.txtPasswd)
         Me.Controls.Add(Me.lblSenha)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.lblUsuario)
-        Me.Controls.Add(Me.btnAccess)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Acesso de Usuário"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -108,4 +155,6 @@ Partial Class Login
     Friend WithEvents txtPasswd As TextBox
     Friend WithEvents lblSenha As Label
     Friend WithEvents btnQuit As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
 End Class

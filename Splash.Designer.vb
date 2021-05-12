@@ -23,52 +23,40 @@ Partial Class Splash
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.lblLogo = New System.Windows.Forms.Label()
-        Me.lblSubLogo = New System.Windows.Forms.Label()
         Me.tmrInicial = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblLogo
-        '
-        Me.lblLogo.AutoSize = True
-        Me.lblLogo.Font = New System.Drawing.Font("Segoe UI", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLogo.Location = New System.Drawing.Point(191, 154)
-        Me.lblLogo.Name = "lblLogo"
-        Me.lblLogo.Size = New System.Drawing.Size(239, 128)
-        Me.lblLogo.TabIndex = 0
-        Me.lblLogo.Text = "SGH"
-        '
-        'lblSubLogo
-        '
-        Me.lblSubLogo.AutoSize = True
-        Me.lblSubLogo.Location = New System.Drawing.Point(181, 282)
-        Me.lblSubLogo.Name = "lblSubLogo"
-        Me.lblSubLogo.Size = New System.Drawing.Size(259, 15)
-        Me.lblSubLogo.TabIndex = 1
-        Me.lblSubLogo.Text = "Sistema de Gerenciamento Hospitalar Facilitado"
         '
         'tmrInicial
         '
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.SGH.My.Resources.Resources.logo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(87, 54)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(445, 348)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Splash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.Color.SteelBlue
         Me.ClientSize = New System.Drawing.Size(611, 450)
-        Me.Controls.Add(Me.lblSubLogo)
-        Me.Controls.Add(Me.lblLogo)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Cursor = System.Windows.Forms.Cursors.No
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Splash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Splash"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblLogo As Label
-    Friend WithEvents lblSubLogo As Label
     Friend WithEvents tmrInicial As Timer
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -31,12 +31,16 @@ Partial Class Register
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.txtPasswd = New System.Windows.Forms.TextBox()
         Me.btnRemove = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblUser
         '
         Me.lblUser.AutoSize = True
-        Me.lblUser.Location = New System.Drawing.Point(12, 13)
+        Me.lblUser.Location = New System.Drawing.Point(12, 137)
         Me.lblUser.Name = "lblUser"
         Me.lblUser.Size = New System.Drawing.Size(50, 15)
         Me.lblUser.TabIndex = 0
@@ -45,7 +49,7 @@ Partial Class Register
         'lblPasswd
         '
         Me.lblPasswd.AutoSize = True
-        Me.lblPasswd.Location = New System.Drawing.Point(12, 57)
+        Me.lblPasswd.Location = New System.Drawing.Point(12, 181)
         Me.lblPasswd.Name = "lblPasswd"
         Me.lblPasswd.Size = New System.Drawing.Size(42, 15)
         Me.lblPasswd.TabIndex = 1
@@ -54,7 +58,7 @@ Partial Class Register
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 101)
+        Me.Label3.Location = New System.Drawing.Point(12, 225)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 15)
         Me.Label3.TabIndex = 2
@@ -62,7 +66,7 @@ Partial Class Register
         '
         'txtUser
         '
-        Me.txtUser.Location = New System.Drawing.Point(12, 31)
+        Me.txtUser.Location = New System.Drawing.Point(12, 155)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(121, 23)
         Me.txtUser.TabIndex = 3
@@ -71,14 +75,14 @@ Partial Class Register
         '
         Me.cmbLevel.FormattingEnabled = True
         Me.cmbLevel.Items.AddRange(New Object() {"admin", "user"})
-        Me.cmbLevel.Location = New System.Drawing.Point(12, 119)
+        Me.cmbLevel.Location = New System.Drawing.Point(12, 243)
         Me.cmbLevel.Name = "cmbLevel"
         Me.cmbLevel.Size = New System.Drawing.Size(121, 23)
         Me.cmbLevel.TabIndex = 4
         '
         'btnRegister
         '
-        Me.btnRegister.Location = New System.Drawing.Point(12, 148)
+        Me.btnRegister.Location = New System.Drawing.Point(12, 272)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(121, 23)
         Me.btnRegister.TabIndex = 5
@@ -87,7 +91,7 @@ Partial Class Register
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(12, 206)
+        Me.btnQuit.Location = New System.Drawing.Point(12, 330)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(121, 23)
         Me.btnQuit.TabIndex = 6
@@ -96,25 +100,47 @@ Partial Class Register
         '
         'txtPasswd
         '
-        Me.txtPasswd.Location = New System.Drawing.Point(12, 75)
+        Me.txtPasswd.Location = New System.Drawing.Point(12, 199)
         Me.txtPasswd.Name = "txtPasswd"
         Me.txtPasswd.Size = New System.Drawing.Size(121, 23)
         Me.txtPasswd.TabIndex = 7
         '
         'btnRemove
         '
-        Me.btnRemove.Location = New System.Drawing.Point(12, 177)
+        Me.btnRemove.Location = New System.Drawing.Point(12, 301)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Size = New System.Drawing.Size(121, 23)
         Me.btnRemove.TabIndex = 8
         Me.btnRemove.Text = "Remover"
         Me.btnRemove.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(149, 124)
+        Me.Panel1.TabIndex = 9
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SGH.My.Resources.Resources.admin_line
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 95)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(165, 243)
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(149, 377)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnRemove)
         Me.Controls.Add(Me.txtPasswd)
         Me.Controls.Add(Me.btnQuit)
@@ -124,9 +150,12 @@ Partial Class Register
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.lblPasswd)
         Me.Controls.Add(Me.lblUser)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Register"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro"
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -141,4 +170,6 @@ Partial Class Register
     Friend WithEvents btnQuit As Button
     Friend WithEvents txtPasswd As TextBox
     Friend WithEvents btnRemove As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -1,9 +1,12 @@
 ﻿Public Class Login
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
         Close()
+        Dim splashLoad As New Splash
         splashLoad.Close()
+        Application.Exit()
     End Sub
     Private Sub btnAccess_Click(sender As Object, e As EventArgs) Handles btnAccess.Click
+        Dim menuLoad As New Menu
         If txtUser.Text = String.Empty Or txtPasswd.Text = String.Empty Then
             MsgBox("Usuário e senha não podem estar vazios", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
         Else
@@ -16,7 +19,7 @@
                         sessionUser = CStr(rs.Fields(0).Value)
                         session = True
                         menuLoad.Show()
-                        Hide()
+                        Close()
                         CleanLogin()
                     Else
                         MsgBox("Usuário ou senha incorretos", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
@@ -33,10 +36,18 @@
         End If
     End Sub
     Sub CleanLogin()
+        Dim loginLoad As New Login
         With loginLoad
             .txtUser.Clear()
             .txtPasswd.Clear()
         End With
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim menuLoad As New Menu
+        menuLoad.Dispose()
+        menuLoad.Close()
+        Menu.Dispose()
     End Sub
 End Class
 
